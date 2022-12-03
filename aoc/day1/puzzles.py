@@ -7,7 +7,7 @@ def read_input(is_example: bool = False) -> str:
         return handle.read()
 
 
-def handle_input(data: str) -> list[str]:
+def parse_input(data: str) -> list[str]:
     """First modifications for data before parsing, e.g. split by lines"""
     return data.splitlines()
 
@@ -67,7 +67,7 @@ def _assert2(answer2: int, is_example: bool) -> None:
 if __name__ == "__main__":
     is_example = False
 
-    data = handle_input(read_input(is_example=is_example))
+    data = parse_input(read_input(is_example=is_example))
 
     answer1 = puzzle1(data)
     _assert1(answer1, is_example)

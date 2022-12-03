@@ -8,25 +8,25 @@ def read_input(is_example: bool = False) -> str:
         return handle.read()
 
 
-def handle_input(data: str) -> Any:
-    """First modifications for data before parsing, e.g. split by lines"""
+def parse_input(data: str) -> Any:
+    """ """
     return data
 
 
-def parser_func(data: Any) -> Any:
+def do_stuff(data: Any) -> Any:
     """ """
     pass
 
 
 def puzzle1(data: Any) -> Any:
     """ """
-    val = parser_func(data)
+    val = do_stuff(data)
     return val
 
 
 def puzzle2(data: Any) -> Any:
     """ """
-    val = parser_func(data)
+    val = do_stuff(data)
     return val
 
 
@@ -34,22 +34,26 @@ def _assert1(answer1: int, is_example: bool) -> None:
     """Asserts that the answer1 is as it should be, for e.g. refactoring."""
     if is_example:
         assert answer1 == 0  # example data
+        pass
     else:
         assert answer1 == 0
+        pass
 
 
 def _assert2(answer2: int, is_example: bool) -> None:
     """Asserts that the answer2 is as it should be, for e.g. refactoring."""
     if is_example:
         assert answer2 == 0  # example data
+        pass
     else:
         assert answer2 == 0
+        pass
 
 
 if __name__ == "__main__":
     is_example = True
 
-    data = handle_input(read_input(is_example=is_example))
+    data = parse_input(read_input(is_example=is_example))
 
     answer1 = puzzle1(data)
     _assert1(answer1, is_example)
