@@ -95,7 +95,11 @@ def puzzle1(data: list[list[str]]) -> int:
     # print(pts)
 
 
+<<<<<<< HEAD
 def puzzle2(data: list[list[str]]) -> int:
+=======
+def puzzle2(data: Any) -> int:
+>>>>>>> 7504429798317538f128405212e5d7e5ed2cade5
     """
     Solve puzzle 2. Data rows have two elements, opponent's pick and the desired result.
     """
