@@ -92,7 +92,6 @@ def puzzle1(data: list[list[str]]) -> int:
     for opp_pick, my_pick in data:
         total_pts = total_pts + single_game_points_1(opp_pick, my_pick)
     return total_pts
-    # print(pts)
 
 
 def puzzle2(data: list[list[str]]) -> int:

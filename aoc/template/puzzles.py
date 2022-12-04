@@ -56,9 +56,9 @@ if __name__ == "__main__":
     data = parse_input(read_input(is_example=is_example))
 
     answer1 = puzzle1(data)
-    _assert1(answer1, is_example)
     print(f"{answer1}")
+    _assert1(answer1, is_example)
 
     answer2 = puzzle2(data)
-    _assert2(answer2, is_example)
     print(f"{answer2}")
+    _assert2(answer2, is_example)
