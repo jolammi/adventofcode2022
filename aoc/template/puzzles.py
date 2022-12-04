@@ -33,20 +33,20 @@ def puzzle2(data: Any) -> Any:
 def _assert1(answer1: int, is_example: bool) -> None:
     """Asserts that the answer1 is as it should be, for e.g. refactoring."""
     if is_example:
-        assert answer1 == 0  # example data
+        # assert answer1 == 0  # example data
         pass
     else:
-        assert answer1 == 0
+        # assert answer1 == 0
         pass
 
 
 def _assert2(answer2: int, is_example: bool) -> None:
     """Asserts that the answer2 is as it should be, for e.g. refactoring."""
     if is_example:
-        assert answer2 == 0  # example data
+        # assert answer2 == 0  # example data
         pass
     else:
-        assert answer2 == 0
+        # assert answer2 == 0
         pass
 
 
