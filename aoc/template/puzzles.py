@@ -3,6 +3,10 @@ from typing import Any
 
 
 def read_input(is_example: bool = False) -> str:
+    """
+    Reads the input file based on whether example is wanted or not.
+    Returns input as a string.
+    """
     input_file = "input.txt" if not is_example else "_input.txt"
     with open(Path(__file__).parent / input_file) as handle:
         return handle.read()
