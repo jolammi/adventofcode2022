@@ -1,4 +1,4 @@
-name: black ckeck and flake8
+name: black check and flake8
 on: [push]
 jobs:
   install-packages:
@@ -13,6 +13,6 @@ jobs:
       - name: install requirements
         run: pip install -r requirements.txt
       - name: Flake8 linting
-        run: flake8 aoc
+        run: flake8 aoc --max-line-length=88 --extend-ignore=E203
       - name: Black linting
         run: black --check aoc

@@ -18,8 +18,9 @@ def read_input(is_example: bool = False) -> str:
 def parse_input(data: str) -> tuple[list[list[str]], list[tuple[int, int, int]]]:
     """
     Parses input and returns two lists.
-    The first list has the containers as lists of strings. The lists are built as columns,
-    so that the first element of every list is the topmost container of each tower.
+    The first list has the containers as lists of strings. The lists are built as
+    columns, so that the first element of every list is the topmost container of each
+    tower.
 
     The second list has the instructions as three-element tuples:
     (amount of containers to move, strack to move from, stack to move to).

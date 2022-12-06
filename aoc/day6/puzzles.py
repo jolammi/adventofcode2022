@@ -51,12 +51,14 @@ if __name__ == "__main__":
 
     answer1 = puzzle(data, window_size=4)
     print(
-        f"The first start-of-packet marker is detected after processing {answer1} characters."
+        f"The first start-of-packet marker is detected after processing {answer1} "
+        "characters."
     )
     _assert1(answer1, is_example)
 
     answer2 = puzzle(data, window_size=14)
     print(
-        f"The first start-of-packet marker is detected after processing {answer2} characters."
+        f"The first start-of-packet marker is detected after processing {answer2} "
+        "characters."
     )
     _assert2(answer2, is_example)
