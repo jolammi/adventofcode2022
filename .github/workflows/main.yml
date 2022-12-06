@@ -1,7 +1,7 @@
-name: black check and flake8
+name: linting
 on: [push]
 jobs:
-  install-packages:
+  lint:
     name: install-packages
     runs-on: ubuntu-latest
     steps:
