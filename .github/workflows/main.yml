@@ -1,0 +1,25 @@
+name: black ckeck and flake8
+on: [push]
+jobs:
+  install-packages:
+    name: install-packages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10' 
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+      
+  flake8-linting:
+    name: flake8-linting
+    runs-on: ubuntu-latest
+    steps:
+    - run: python -m flake8
+    
+  black-linting:
+    name: black-linting
+    runs-on: ubuntu-latest
+    steps:
+    - run: python -m black
