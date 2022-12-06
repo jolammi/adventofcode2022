@@ -12,32 +12,7 @@ jobs:
           cache: 'pip'
       - name: install requirements
         run: pip install -r requirements.txt
-      # - name: Flake8 linting
-      #   run: flake8 aoc
-      # - name: Black linting
-      #   run: black --check aoc
-
-
-  flake8-linting:
-    name: flake8-linting
-    needs: install-packages
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-          cache: 'pip'
-      - run: flake8 aoc
-
-  black-linting:
-    name: black-linting
-    needs: install-packages
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-          cache: 'pip'
-      - run: black --check aoc
+      - name: Flake8 linting
+        run: flake8 aoc
+      - name: Black linting
+        run: black --check aoc
